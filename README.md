@@ -28,7 +28,16 @@ Get a new repo & just copy paste the commands
 ## Step 3: Adding TS Support with Nodemon
 
 ```bash
-npm install -D typescript ts-node nodemon@types/node
+npm install -D typescript ts-node nodemon @types/node
+```
+## Step 4 : Make a .gitignore file & add files as needed.
+```bash
+node_modules
+```
+
+## Step 5: Initing TSC File for TypeScript
+```bash
+npx tsc --init
 ```
 
 </details>
