@@ -10,7 +10,7 @@
     "apis",
     "express"
   ],
-  "author": "Aditya V",
+  "author": "Aditya V <avyas8927@gmail.com>",
   "license": "ISC",
   "description": "",
   "devDependencies": {
