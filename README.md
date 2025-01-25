@@ -30,19 +30,32 @@ Get a new repo & just copy paste the commands
 ```bash
 npm install -D typescript ts-node nodemon @types/node
 ```
+
 ## Step 4 : Make a .gitignore file & add files as needed.
+
 ```bash
 node_modules
 ```
 
 ## Step 5: Initing TSC File for TypeScript
+
 ```bash
 npx tsc --init
 ```
 
 ## Step 6: Setup ESLint
+
 ```bash
 npm init @eslint/config@latest
+```
+
+## Step 7: Setup Express
+
+```bash
+npm i express
+npm i -D @types/express
+
+// Create a server & app. Run the server & then create routes in the app section
 ```
 
 </details>
