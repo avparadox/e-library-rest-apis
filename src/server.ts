@@ -1,4 +1,7 @@
-
 console.log("File contents are changed");
 
-console.log("Hello");
+function test() {
+  console.log("Testing the func");
+}
+
+test();
