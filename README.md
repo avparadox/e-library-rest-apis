@@ -84,6 +84,17 @@ npm i mongoose
 npm i -D @types/mongoose
 ```
 
+## Step 10: Error Handling Configuration
+
+We need to handle errors in a specific way. Global Error Handler is used here in our code.
+Showing the error stack is one of the important things here.
+
+```bash
+npm i http-errors
+npm i -D @types/http-errors
+```
+
+
 
 </details>
 
