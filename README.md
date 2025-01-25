@@ -69,6 +69,22 @@ npm i dotenv
 npm i -D @types/dotenv
 ```
 
+## Step 9: Installing Mongoose
+
+First we need to create a mongodb instance using our Docker
+
+```bash
+docker run --name mongodb -d -p 27017:27017 mongo
+```
+
+After this we need to install mongoose & it's types
+
+```bash
+npm i mongoose
+npm i -D @types/mongoose
+```
+
+
 </details>
 
 ---
