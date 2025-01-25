@@ -40,6 +40,11 @@ node_modules
 npx tsc --init
 ```
 
+## Step 6: Setup ESLint
+```bash
+npm init @eslint/config@latest
+```
+
 </details>
 
 ---
