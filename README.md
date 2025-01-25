@@ -51,11 +51,22 @@ npm init @eslint/config@latest
 
 ## Step 7: Setup Express
 
+Create a server & app. Run the server & then create routes in the app section
+
 ```bash
 npm i express
 npm i -D @types/express
+```
 
-// Create a server & app. Run the server & then create routes in the app section
+## Step 8: DotEnv Setup
+
+Create a config file to map the process.env.{value} & make it readonly & export it.
+
+Then install dotenv packages & use it in the server side.
+
+```bash
+npm i dotenv
+npm i -D @types/dotenv
 ```
 
 </details>
