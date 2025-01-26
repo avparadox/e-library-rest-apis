@@ -64,4 +64,50 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export { createUser };
+const loginUser = async (req: Request, res: Response, next: NextFunction) => {
+  const { email, password } = req.body;
+  // Checks if user has passed all the things
+  try {
+    if (!email || !password) {
+      return next(createHttpError(400, "All fields are required"));
+    }
+  } catch (error) {
+    console.log(error);
+    return next(createHttpError(400, "Something went wrong"));
+  }
+
+  try {
+    // User Data Retrival
+    const user = await userModel.findOne({
+      email,
+    });
+
+    if (!user) {
+      return next(createHttpError(404, "User not found"));
+    }
+
+    // Login Validaion
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+
+    if (!isPasswordValid) {
+      return next(createHttpError(400, "Username or Password Incorrect"));
+    }
+
+    // Create AccessToken during Login
+    const token = sign({ sub: user._id }, config.jwtSecret as string, {
+      expiresIn:  "7d",
+      algorithm: "HS256",
+    });
+
+    // Response
+    res.status(200).json({
+      accessToken: token,
+    });
+    next();
+  } catch (error) {
+    console.log(error);
+    return next(createHttpError(400, "Bad Request"));
+  }
+};
+
+export { createUser, loginUser };
