@@ -94,7 +94,26 @@ npm i http-errors
 npm i -D @types/http-errors
 ```
 
+</details>
 
+<details>
+<summary>
+Chapter 2 - Defining Post Endpoints
+</summary>
+
+## Step 1:
+
+First we need to make a different folder as per our usecase. For me it's user so I am doing in this way.
+
+Then we need to make a Router Folder. For me it's userRouter.
+
+```bash
+create a router & controller. Then make use of app.use in the main app file and use different routes. This make your app very clean while coding different systems. 
+
+router should make reference to the controller which will help us in keep things minimal & clean.
+```
+
+For more reference refere user register commit.
 
 </details>
 
