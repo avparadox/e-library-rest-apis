@@ -53,9 +53,10 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
     });
 
     // Response
-    res.json({
+    res.status(201).json({
       id: newUser._id,
       accessToken: token,
+      message: "User created successfully",
     });
   } catch (error) {
     console.log(error);
