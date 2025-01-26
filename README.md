@@ -98,10 +98,10 @@ npm i -D @types/http-errors
 
 <details>
 <summary>
-Chapter 2 - Defining Post Endpoints
+Chapter 2 - Real Story of Backend
 </summary>
 
-## Step 1:
+## Step 1: Define Routes in a clean manner
 
 First we need to make a different folder as per our usecase. For me it's user so I am doing in this way.
 
@@ -115,7 +115,43 @@ router should make reference to the controller which will help us in keep things
 
 For more reference refere user register commit.
 
+## Step 2: Define Databse Model
+
+In this section, we need to define model for the data we are accepting for MongoDB from the user. 
+
+```bash
+We need to define the name, email & password types with if they are required or not. Unique or not and soo on.
+```
+
+For more info, refer User Model Added commit from the commit history.
+
+
+## Step 3: Hashing the password
+
+In this chapter, we are storing only the hashed password in our Database.
+
+```bash
+We are using library called bcrypt and not bcryptjs. We are basically hashing our password using this library and we are also adding number of salt rounds so that our password is hashed nicely.
+```
+
+For more info, kindly visit Added hashing to the password commit history.
+
+
+## Step 4: Adding JWT
+
+In this chapter, we are adding JWT (Json Web Token) to our system so that we can generate a token for the user.
+
+```bash
+We are using a library called as jsonwebtoken. Using this library we are signing a token or accessToken which we are creating using user details like _id (user id made by the MongoDB) & jwtSecret (stored on the server). We are also adding an expiry limit and an algorithm for the JWT to be created.
+
+Also the secret stored on the server helps in creating the JWT and then also verifying the JWT token given by the user on verifying it's legitimacy of it's role and exisitence on the Databse.
+
+In this way, secret is being used to create the token and also verifying the token when taken back by the user.
+```
+
+For more info, kindly visit the Added JWT commit in history.
 </details>
+
 
 ---
 
