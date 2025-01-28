@@ -1,4 +1,4 @@
-# Docs for Rest API Project.
+# Docs for E-Library Rest APIs
 
 Hey I'll keep on writing what I learnt. Hopefully we complete this.
 
