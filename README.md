@@ -151,6 +151,6 @@ For more info, kindly visit the Added JWT commit in history.
 
 </details>
 
-## We are Left with Docs Updation. That will be done by this weekend.
+## We are left with docs updation. That will be done by this weekend.
 
 Happy Coding :)
