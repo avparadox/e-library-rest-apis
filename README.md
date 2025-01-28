@@ -1,4 +1,4 @@
-# Docs for my Rest-APIs learning.
+# Docs for Rest API Project.
 
 Hey I'll keep on writing what I learnt. Hopefully we complete this.
 
