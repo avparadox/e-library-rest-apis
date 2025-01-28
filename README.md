@@ -108,7 +108,7 @@ First we need to make a different folder as per our usecase. For me it's user so
 Then we need to make a Router Folder. For me it's userRouter.
 
 ```bash
-create a router & controller. Then make use of app.use in the main app file and use different routes. This make your app very clean while coding different systems. 
+create a router & controller. Then make use of app.use in the main app file and use different routes. This make your app very clean while coding different systems.
 
 router should make reference to the controller which will help us in keep things minimal & clean.
 ```
@@ -117,14 +117,13 @@ For more reference refere user register commit.
 
 ## Step 2: Define Databse Model
 
-In this section, we need to define model for the data we are accepting for MongoDB from the user. 
+In this section, we need to define model for the data we are accepting for MongoDB from the user.
 
 ```bash
 We need to define the name, email & password types with if they are required or not. Unique or not and soo on.
 ```
 
 For more info, refer User Model Added commit from the commit history.
-
 
 ## Step 3: Hashing the password
 
@@ -135,7 +134,6 @@ We are using library called bcrypt and not bcryptjs. We are basically hashing ou
 ```
 
 For more info, kindly visit Added hashing to the password commit history.
-
 
 ## Step 4: Adding JWT
 
@@ -150,9 +148,9 @@ In this way, secret is being used to create the token and also verifying the tok
 ```
 
 For more info, kindly visit the Added JWT commit in history.
+
 </details>
 
-
----
+## We are Left with Docs Updation. That will be done by this weekend.
 
 Happy Coding :)
