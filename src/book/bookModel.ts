@@ -19,6 +19,10 @@ const bookSchema = new mongoose.Schema<Book>(
       type: String,
       required: true,
     },
+    coverImage: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
