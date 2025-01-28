@@ -4,6 +4,7 @@ import path from "node:path";
 import createHttpError from "http-errors";
 import bookModel from "./bookModel";
 import fs from "node:fs";
+import { AuthRequest } from "../middlewares/authenticate";
 
 const createBook = async (req: Request, res: Response, next: NextFunction) => {
   const { title, genre } = req.body;
@@ -47,6 +48,8 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
       }
     );
 
+    const _req = req as AuthRequest;
+
     console.log(uploadResult);
     console.log(bookFileUploadResult);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -56,7 +59,7 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
     const newBook = await bookModel.create({
       title,
       genre,
-      author: "67967357aaf7e7af09792a48",
+      author: _req.userId,
       coverImage: uploadResult.secure_url,
       file: bookFileUploadResult.secure_url,
     });
