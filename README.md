@@ -1,6 +1,6 @@
 # Docs for E-Library Rest APIs
 
-Hey I'll keep on writing what I learnt. Hopefully we complete this.
+Hey I'll keep on writing what I learnt.
 
 Source:
 ![Mastering API's](/assets//6SJQ5eOChrA-HD.jpg)
