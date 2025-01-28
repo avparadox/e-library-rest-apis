@@ -182,7 +182,7 @@ const getSingleBook = async (
     if (!book) {
       return next(createHttpError(404, "Book not found."));
     }
-    return res.json(book);
+    res.json(book);
   } catch (err) {
     console.log(err);
     return next(createHttpError(500, "Error while getting a book"));
@@ -214,7 +214,7 @@ const deleteBook = async (req: Request, res: Response, next: NextFunction) => {
     resource_type: "raw",
   });
   await bookModel.deleteOne({ _id: bookId });
-  return res.sendStatus(204);
+  res.sendStatus(204);
 };
 
 export { createBook, updateBook, listBooks, getSingleBook, deleteBook };
