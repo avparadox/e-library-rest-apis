@@ -9,9 +9,9 @@ import { config } from "./config/config";
 const app = express();
 
 app.use(
-  cors({
-    origin: config.frontendDomain,
-  })
+    cors({
+        origin: config.frontendDomain,
+    })
 );
 
 app.use(express.json());
@@ -19,12 +19,12 @@ app.use(express.json());
 // Routes
 // Http methods: GET, POST, PUT, PATCH, DELETE
 app.get("/", (req, res, next) => {
-  // const error = createHttpError(400, "something went wrong");
-  // throw error;
-  res.json({
-    message: "All systems working fine",
-  });
-  next();
+    // const error = createHttpError(400, "something went wrong");
+    // throw error;
+    res.json({
+        message: "All systems working fine",
+    });
+    next();
 });
 
 // User Router
