@@ -3,6 +3,7 @@ import cloudinary from "../config/cloudinary";
 import path from "node:path";
 import createHttpError from "http-errors";
 import bookModel from "./bookModel";
+import fs from "node:fs";
 
 const createBook = async (req: Request, res: Response, next: NextFunction) => {
   const { title, genre } = req.body;
@@ -57,10 +58,17 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
       file: bookFileUploadResult.secure_url,
     });
 
-    res.json({
-      uploadResult,
-      bookFileUploadResult,
-      newBook,
+    // Delete Temp Files
+    try {
+      await fs.promises.unlink(filePath);
+      await fs.promises.unlink(bookFilePath);
+    } catch (e) {
+      next(createHttpError(400, "Error while removing temp files"));
+      next(e);
+    }
+
+    res.status(201).json({
+      id: newBook._id,
     });
   } catch (e) {
     console.log(e);
