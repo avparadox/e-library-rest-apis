@@ -1,9 +1,6 @@
 # Docs for E-Library Rest APIs
 
-Hey I'll keep on writing what I learnt.
-
-
-![Mastering API's](/assets//6SJQ5eOChrA-HD.jpg "Click to view more details")](https://youtu.be/TzhjDhFjr8E?si=TbU2wspWvpYwJNJ2)
+[![Video Thumbnail](/assets//6SJQ5eOChrA-HD.jpg "Click to view more details")](https://youtu.be/6SJQ5eOChrA?si=7ry0vWpTbBaBoKg3)
 
 <details>
 
@@ -151,4 +148,4 @@ For more info, kindly visit the Added JWT commit in history.
 
 ## We are left with docs updation. That will be done by this weekend.
 
-Happy Coding :)
+Happy Coding!
