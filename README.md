@@ -3,7 +3,7 @@
 Hey I'll keep on writing what I learnt.
 
 
-![Mastering API's](/assets//6SJQ5eOChrA-HD.jpg)(https://youtu.be/6SJQ5eOChrA?si=cTWmTViO7D69VJK5)
+![Mastering API's](/assets//6SJQ5eOChrA-HD.jpg "Click to view more details")](https://youtu.be/TzhjDhFjr8E?si=TbU2wspWvpYwJNJ2)
 
 <details>
 
