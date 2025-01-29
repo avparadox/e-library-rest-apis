@@ -1,4 +1,4 @@
-# Docs for E-Library Rest APIs
+# E-Library Rest APIs
 
 [![Video Thumbnail](/assets//6SJQ5eOChrA-HD.jpg "Click to view more details")](https://youtu.be/6SJQ5eOChrA?si=7ry0vWpTbBaBoKg3)
 
